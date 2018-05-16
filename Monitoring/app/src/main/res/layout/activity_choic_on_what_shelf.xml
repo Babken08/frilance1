@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/colorGrayAction"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/ic_chevron_left_black_24dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="Выбор места на полке"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="шляпа"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/btn_brim_hat"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_left_hat"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_centre_hat"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_right_hat"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+             <ImageView
+                 android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                 android:layout_centerInParent="true"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_end_hat"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="глаза"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/btn_brim_eyes"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/right"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_left_eyes"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_centre_eyes"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:src="@drawable/plus"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_right_eyes"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_end_eyes"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:src="@drawable/left"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="руки"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/btn_brim_hand"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+              <ImageView
+                  android:src="@drawable/right"
+                  android:layout_centerInParent="true"
+                  android:layout_width="wrap_content"
+                  android:layout_height="24dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_left_hand"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_centre_hand"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+             <ImageView
+                 android:src="@drawable/plus"
+                 android:layout_centerInParent="true"
+                 android:layout_width="wrap_content"
+                 android:layout_height="24dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_right_hand"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+          <ImageView
+              android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+              android:layout_centerInParent="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_end_hand"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+          <ImageView
+              android:src="@drawable/left"
+              android:layout_centerInParent="true"
+              android:layout_width="wrap_content"
+              android:layout_height="24dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="пояс"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/btn_brim_belt"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:src="@drawable/right"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_left_belt"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+           <ImageView
+               android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+               android:layout_centerInParent="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_centre_belt"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/plus"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_right_belt"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+           <ImageView
+               android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+               android:layout_centerInParent="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_end_belt"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/left"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="колени"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/btn_brim_knees"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/right"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_left_knees"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+               <ImageView
+                   android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                   android:layout_centerInParent="true"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_centre_knees"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+          <ImageView
+              android:src="@drawable/plus"
+              android:layout_centerInParent="true"
+              android:layout_width="wrap_content"
+              android:layout_height="24dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_right_knees"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+               <ImageView
+                   android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                   android:layout_centerInParent="true"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_end_knees"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+             <ImageView
+                 android:src="@drawable/left"
+                 android:layout_centerInParent="true"
+                 android:layout_width="wrap_content"
+                 android:layout_height="24dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="ноги"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/btn_brim_foot"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+          <ImageView
+              android:src="@drawable/right"
+              android:layout_centerInParent="true"
+              android:layout_width="wrap_content"
+              android:layout_height="24dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_left_foot"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+             <ImageView
+                 android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                 android:layout_centerInParent="true"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_centre_foot"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+              <ImageView
+                  android:src="@drawable/plus"
+                  android:layout_centerInParent="true"
+                  android:layout_width="wrap_content"
+                  android:layout_height="24dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_right_foot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_end_foot"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_buttonwhite"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:src="@drawable/left"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

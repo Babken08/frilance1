@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DescriptionTaskActivity">
+
+
+    <LinearLayout
+        android:id="@+id/bar_layout"
+        android:orientation="horizontal"
+        android:background="@color/colorGrayAction"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_chevron_left_black_24dp"
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_execute"
+                android:textColor="#4fa5d5"
+                android:text="далее"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorTransParent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_below="@+id/bar_layout"
+        android:layout_margin="10dp"
+        android:id="@+id/tv_text_description"
+        android:text="описание задачи"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_margin="10dp"
+        android:text="bla, bla bla ...............................
+        ...........................................................
+        ...........................................................
+        ...........................................................
+        ............................................................."
+        android:id="@+id/tv_description"
+        android:layout_below="@+id/tv_text_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

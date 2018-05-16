@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NoteActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/colorGrayAction"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_chevron_left_black_24dp"
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="Заметка"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent" />
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <!--<Button-->
+                <!--android:id="@+id/btn_next"-->
+                <!--android:textColor="#4fa5d5"-->
+                <!--android:text="далее"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:background="@color/colorTransParent"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent" />-->
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:layout_margin="5dp"
+            android:hint="заметки..."
+            android:id="@+id/et_add_personal_description"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:id="@+id/finish"
+            android:background="@drawable/border_button1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_margin="5dp"
+                android:src="@drawable/save"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorWhite"
+                android:text="сохранить"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

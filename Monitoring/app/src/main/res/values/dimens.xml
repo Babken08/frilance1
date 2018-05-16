@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginLeftAndRight">10dp</dimen>
+    <dimen name="shopsTextSize">24sp</dimen>
+    <dimen name="textSizePast">12sp</dimen>
+    <dimen name="roundButtonSize">50sp</dimen>
+</resources>

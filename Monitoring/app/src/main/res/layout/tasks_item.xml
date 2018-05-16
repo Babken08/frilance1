@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/linerLayout"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="1"
+                android:id="@+id/tv_index"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_fiber_manual_record_black_24dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.9"
+                android:layout_height="60dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content">
+
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+
+                    <TextView
+                        android:inputType="textImeMultiLine"
+                        android:id="@+id/tv_task_text"
+                        android:textSize="@dimen/shopsTextSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        tools:ignore="TextViewEdits" />
+
+                </HorizontalScrollView>
+                <TextView
+                    android:text="товары"
+                    android:textSize="@dimen/textSizePast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.4"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_chevron_right_black_24dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+            <View
+                android:background="@color/colorGray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+    </LinearLayout>
+</RelativeLayout>
